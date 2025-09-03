@@ -58,6 +58,7 @@ jobs:
         env:
           DB_USERNAME: ${{ secrets.PG_USER }}
           DB_PASSWORD: ${{ secrets.PG_PASSWORD }}
+          JDBC_CONNECTION: ${{ secrets.JDBC_CONNECTION }}
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
