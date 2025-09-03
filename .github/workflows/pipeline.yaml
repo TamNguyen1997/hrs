@@ -56,8 +56,8 @@ jobs:
       - name: Build & Run Unit Tests
         run: ./gradlew clean build
         env:
-          PG_USER: ${{ secrets.PG_USER }}
-          PG_PASSWORD: ${{ secrets.PG_PASSWORD }}
+          DB_USERNAME: ${{ secrets.PG_USER }}
+          DB_PASSWORD: ${{ secrets.PG_PASSWORD }}
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
